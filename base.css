@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#wrap{
+    height: auto;
+    width: 100%;
+}
+
+#logo{
+    width: 120px;
+    margin: 25px 40px;
+}
+
+#mobile_dp{
+    width: 100%;
+}
+
+#content{
+    text-align: center;
+    width: 85%;
+    margin: 20px auto;
+}
+
+#content h1{
+    letter-spacing: 10px;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+#content h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+}
+
+#content p{
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-family: 100;
+    line-height: 25px;
+}
+
+#input{
+    margin: 20px auto 5px;
+    position: relative;
+}
+
+#emailbox{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid red;
+    padding: 10px 15px;
+}
+
+input::placeholder{
+    color: hsla(0, 36%, 70%, 0.645);
+}
+
+#error{
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#btn{
+    height: 100%;
+    width: 70px;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn img{
+    width: 15px;
+}
+
+#mailerror, #mailsuccess{
+    display: none;
+}
+
+#mailerror{
+    color: hsl(0, 93%, 68%) !important;
+}
+
+#mailsuccess{
+    color: green !important;
+}
+
+#second{
+    display: none;
+}
+
+
+
+
+
+
+
+/*for the responsieve screen of sm and above*/
+@media screen and (min-width:576px){
+    #content{
+        width: 500px;
+    }
+}
+
+
+/*for the responsieve screen of md and above*/
+@media screen and (min-width:770px){
+    #wrap{
+        display: flex;
+    }
+    #mobile_dp{
+        display: none;
+    }
+    #first{
+        width: 60%;
+        padding: 20px 140px 30px 120px;
+    }
+    #logo{
+        margin: 40px 0 20px ;
+        width: 180px;
+    }
+    #content{
+        text-align: left;
+        margin: 50px 0 0;
+        width: 100%;
+    }
+
+    #content h1{
+        font-size: 70px;
+    }
+
+
+    #input{
+        margin: 40px 0 0;
+    }
+    #second{
+        display: block;
+        width: 40%;
+    }
+    #second img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
